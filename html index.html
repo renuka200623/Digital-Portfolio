@@ -1,0 +1,69 @@
+        C
+ 
+     <section id="education">
+         <div class="section-content">
+             <h2>Education</h2>
+             <p>Deemed University  - Mech</p>
+             
+             
+         </div>
+     </section>
+ 
+     <section id="skills">
+         <div class="section-content">
+             <h2>Skills</h2>
+             <ul>
+                 <li>canva</li>
+                 <li>MS Word</li>
+                 <li>Adobe Page Maker</li>
+                 <li>Python</li>
+                 <li>java</li>
+                 <li>c++</li>
+             </ul>
+         </div>
+     </section>
+ 
+     <section id="project">
+         <div class="section-content">
+             <h2>project</h2>
+             <ul>
+                 <li><a href="#">Portfolio</a></li>
+                 <!-- Add more project links here -->
+             </ul>
+         </div>
+     </section>
+ 
+     <section id="resume">
+     
+         <div class="section-content">
+             <center>
+             <h2>Resume</h2>
+             <a href="Resume.pdf" target="_blank" class="download-button">Download CV</a>
+         </center>
+         </div>
+         
+     </section>
+ 
+     <footer>
+         <p>&copy;Priya Kesavan.A P</p>
+     </footer>
+     <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
